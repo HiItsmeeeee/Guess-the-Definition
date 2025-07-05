@@ -1,0 +1,10 @@
+body {
+    background:
+      conic-gradient(at 50% 25%,#0000 75%,#8ae4ff 0),conic-gradient(at 50% 25%,#0000 75%,#8ae4ff 0) 32px 32px,
+      conic-gradient(at 50% 25%,#0000 75%,#8ae4ff 0) calc(2*32px) calc(2*32px),
+      conic-gradient(at 50% 25%,#0000 75%,#8ae4ff 0) calc(3*32px) calc(3*32px),
+      repeating-linear-gradient(135deg,#acbfff 0 12.5%,#cbe8ff 0 25%);
+background-size: calc(4 * 32px) calc(4*32px);
+}
+
+/* Credits to https://www.magicpattern.design/tools/css-backgrounds */
