@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Guess the D̷̩͒ẹ̴̌f̸̢̋i̵̅ͅn̷̜̈́í̴̠ț̶͌ȉ̴̹ö̸̺́n̵̟͐
+{% endblock %}
+
+{% block main %}
+    <h1 class="text-bg-light p-3">Guess the D̷̩͒ẹ̴̌f̸̢̋i̵̅ͅn̷̜̈́í̴̠ț̶͌ȉ̴̹ö̸̺́n̵̟͐</h1>
+    <script>
+        function e()
+        {
+            var x = document.getElementById("e");
+            if (x.style.display == "none")
+            {
+                x.style.display = "block";
+            }
+            else
+            {
+                x.style.display = "none";
+            }
+        }
+    </script>
+        <div class="font-monospace">
+            <h6>(Click the "Show/Hide Definition" Button for the definition of the word to show/hide.)</h6>
+        </div>
+        <h6>Legend: "||" = or (as in different definition)</h6>
+    </div>
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <h1>‎‎‎‎</h1>
+            <h1>‎‎‎‎</h1>
+            <h1>‎‎‎‎</h1>
+            <h1>‎‎‎‎</h1>
+            <h1>‎‎‎‎</h1>
+            <h1>
+                <p class="text-center">Word: {{ word }}</p>
+            </h1>
+            <h1>_______________________________________</h1>
+            <h5>‎ ‎ ‎ ‎ ‎ ‎ ‎ </h5>
+            <h2>Definition</h2>
+            <h5>_________________________________</h5>
+            <div id="e" style="display:none">
+                <h3>{{ definition }}</h3>
+            </div>
+            <h2>‎‎‎‎‎</h2>
+        </div>
+        <style>
+            .container {
+              height:500px;
+              position: relative;
+              border: 3px solid green;
+            }
+
+            .vertical-center {
+              margin: 70;
+              position: absolute;
+              top: 70%;
+              -ms-transform: translateY(50%);
+              transform: translateY(50%);
+            }
+            </style>
+            </div>
+        <div class="container">
+            <div class="vertical-center">
+                <div class="btn btn-info">
+                    <a href="/">
+                        <button type="button" class="btn btn-primary btn-lg">Regenerate</button>
+                    </a>
+                </div>
+                <button type="button" class="btn btn-warning" onclick="e()">Show/Hide Definition</button>
+{% endblock %}
